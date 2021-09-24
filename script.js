@@ -39,5 +39,10 @@ var numeroTxt = String(numero);
 
 
 
+var fecha = new Date();
+
+
+
+
 
 

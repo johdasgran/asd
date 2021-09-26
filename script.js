@@ -1,9 +1,9 @@
 "use strict"
 
 
-var nombre = "Hola mi amor xd";
+// var nombre = "Hola mi amor xd";
 
-console.log(nombre);
+// console.log(nombre);
 
 // alert(nombre);
 // alert("Hola mor :3");
@@ -31,15 +31,15 @@ var edad = "24.9";
 // console.log(insuma*10);
 
 
-var numero = 50;
+// var numero = 50;
 
 // console.log(numero);
 
-var numeroTxt = String(numero);
+// var numeroTxt = String(numero);
 
 
 
-var fecha = new Date();
+// var fecha = new Date();
 
 // var lider = {jefe:"bossLayer"}
 
@@ -169,9 +169,9 @@ var datoB = 20;
 
 
 
-function saludar(){
-    return "Hola Baby :3";
-}
+// function saludar() {
+//     return "Hola Baby :3";
+// }
 
 
 // :O parámetros REST
@@ -210,27 +210,27 @@ receta(...pasos, "Fritar las papas", "Carne", " Chorizo", " Salchicha", " Queso"
 //     }
 // )()
 
-var saludaMor = function(){
+var saludaMor = function () {
     return "Hola mor :3";
 }
 
 // Call backs
 
-function calculadora(a, b, sumarCB, restarCB){
-    var suma = a+b;
-    var resta = a-b;
-    sumarCB(suma);
-    restarCB(resta);
-}
+// function calculadora(a, b, sumarCB, restarCB) {
+//     var suma = a + b;
+//     var resta = a - b;
+//     sumarCB(suma);
+//     restarCB(resta);
+// }
 
-calculadora(5,3, 
-    function(resultadoSuma){
-        console.log("La suma es: "+resultadoSuma);
-    },    
-    function(resultadoResta){
-        console.log("La resta es: "+ resultadoResta);
-    }
-);
+// calculadora(5, 3,
+//     function (resultadoSuma) {
+//         console.log("La suma es: " + resultadoSuma);
+//     },
+//     function (resultadoResta) {
+//         console.log("La resta es: " + resultadoResta);
+//     }
+// );
 
 // Funcion Arrow | Fat Arrow | Lambda
 
@@ -238,31 +238,138 @@ var helloName = nombre => "¡Hola " + nombre;
 console.log(helloName("Sabrina!"));
 
 
-var multiplicacion = a => a*5;
-console.log(multiplicacion(10));
+// var multiplicacion = a => a * 5;
+// console.log(multiplicacion(10));
 
 
 // mas de un parametro
 
-var multiplicacion2 = (a, b) => a*b;
-console.log(multiplicacion2(3, 5));
+// var multiplicacion2 = (a, b) => a * b;
+// console.log(multiplicacion2(3, 5));
 
 // mas de una operacion
 
-var calculadora = (a, b) => {
-    var suma = a+b;
-    var resta = a-b;
-    var multi = a*b;
-    var divi = a/b;
-    return "Suma: "+suma+" Resta: "+resta+" Multiplicacion: "+multi+ " Division: "+ divi;
-};
-console.log(calculadora(5,5));
+// var calculadora = (a, b) => {
+//     var suma = a + b;
+//     var resta = a - b;
+//     var multi = a * b;
+//     var divi = a / b;
+//     return "Suma: " + suma + " Resta: " + resta + " Multiplicacion: " + multi + " Division: " + divi;
+// };
+// console.log(calculadora(5, 5));
 
 
 // Sin parametros
 
-var sinParametros = () =>{
-    return "The World of Sabrina";
+// var sinParametros = () => {
+//     return "The World of Sabrina";
+// }
+
+// console.log(sinParametros());
+
+
+const boton = document.querySelector('.boton');
+
+// boton.addEventListener('click', function () {
+//     console.log(this.innerHTML);
+
+// });
+
+// boton.addEventListener('click', ()=>{
+//     console.log(this);
+//     this.location = "https://github.com/johdasgran"
+// });
+
+
+// Eventos mouse
+/*
+boton.addEventListener('click', function(){
+    console.log("El boton se ha pulsado");
+});
+
+boton.addEventListener('mouseover', function(){
+    console.log("El mouse esta sobre el boton");
+});
+
+boton.addEventListener('mouseout', function(){
+    console.log("El mouse esta fuera el boton");
+});*/
+
+
+// Eventos del teclado
+
+// keydown
+// keypress
+// keyup
+
+// window.addEventListener("keydown", function (event) {
+//     console.log("Pulso una tecla");
+//     console.log(event.key);
+// })
+
+// window.addEventListener("keypress", function (event) {
+//     console.log("Tecla presionadaaaaa");
+// })
+
+// window.addEventListener("keyup", function (event) {
+//     console.log("Tecla levantada");
+
+
+// // evento load
+// window.addEventListener('load', function () {
+//     console.log("El contenido de la ventana de ha cargado");
+// })
+
+// Temporizador o timers
+
+// setInterval
+// setTimeout
+
+var temporizador = setInterval(function(){
+    setColor();
+},1000);
+
+
+
+function setColor() {
+    var pagina = document.body;
+    pagina.style.backgroundColor = pagina.style.backgroundColor == "blue" ? "aqua" : "blue";                 
+};
+
+function stopChangeColor(){
+    clearInterval(temporizador);
 }
 
-console.log(sinParametros());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

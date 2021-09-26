@@ -187,6 +187,7 @@ function saludar(){
 // Funcion con parámetros SPREAD
 //Y combinacion de REST = ...otros and SPREAD ...pasos
 
+/*
 function receta(ingrediente1, ingrediente2, ingrediente3, ...otros){
     console.log("Paso 1:  "+ingrediente1);
     console.log("Paso 2:  "+ingrediente2);
@@ -198,11 +199,38 @@ function receta(ingrediente1, ingrediente2, ingrediente3, ...otros){
 var pasos=["Lavar las papas", "Pelar las papas"];
 
 receta(...pasos, "Fritar las papas", "Carne", " Chorizo", " Salchicha", " Queso" );
+*/
 
+/// Funcion Anonima
 
+// (
+//     function(){
+//         var mor = "Te amo :3";
+//         console.log(mor);
+//     }
+// )()
 
+var saludaMor = function(){
+    return "Hola mor :3";
+}
 
+// Call backs
 
+function calculadora(a, b, sumarCB, restarCB){
+    var suma = a+b;
+    var resta = a-b;
+    sumarCB(suma);
+    restarCB(resta);
+}
+
+calculadora(5,3, 
+    function(resultadoSuma){
+        console.log("La suma es: "+resultadoSuma);
+    },    
+    function(resultadoResta){
+        console.log("La resta es: "+ resultadoResta);
+    }
+);
 
 
 

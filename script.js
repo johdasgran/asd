@@ -232,9 +232,37 @@ calculadora(5,3,
     }
 );
 
+// Funcion Arrow | Fat Arrow | Lambda
+
+var helloName = nombre => "¡Hola " + nombre;
+console.log(helloName("Sabrina!"));
 
 
+var multiplicacion = a => a*5;
+console.log(multiplicacion(10));
 
 
+// mas de un parametro
+
+var multiplicacion2 = (a, b) => a*b;
+console.log(multiplicacion2(3, 5));
+
+// mas de una operacion
+
+var calculadora = (a, b) => {
+    var suma = a+b;
+    var resta = a-b;
+    var multi = a*b;
+    var divi = a/b;
+    return "Suma: "+suma+" Resta: "+resta+" Multiplicacion: "+multi+ " Division: "+ divi;
+};
+console.log(calculadora(5,5));
 
 
+// Sin parametros
+
+var sinParametros = () =>{
+    return "The World of Sabrina";
+}
+
+console.log(sinParametros());

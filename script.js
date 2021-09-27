@@ -325,20 +325,20 @@ boton.addEventListener('mouseout', function(){
 // setInterval
 // setTimeout
 
-var temporizador = setInterval(function(){
-    setColor();
-},1000);
+// var temporizador = setInterval(function(){
+//     setColor();
+// },1000);
 
 
 
-function setColor() {
-    var pagina = document.body;
-    pagina.style.backgroundColor = pagina.style.backgroundColor == "blue" ? "aqua" : "blue";                 
-};
+// function setColor() {
+//     var pagina = document.body;
+//     pagina.style.backgroundColor = pagina.style.backgroundColor == "blue" ? "aqua" : "blue";                 
+// };
 
-function stopChangeColor(){
-    clearInterval(temporizador);
-}
+// function stopChangeColor(){
+//     clearInterval(temporizador);
+// }
 
 
 

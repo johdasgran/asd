@@ -341,6 +341,113 @@ boton.addEventListener('mouseout', function(){
 // }
 
 
+// boton.addEventListener('click', function(){
+    
+//     // alert("eoooo");
+//     let resultado = confirm("Quieres ser mi novia?");
+//     if(resultado){
+//         alert(":)");
+       
+//     } else {
+//         alert("¡Jajajajaja te engañe! Vamos es a estudiar mor");
+//         window.location = ("https://platzi.com/home");
+//     }
+    
+
+// })
+
+
+
+// boton.addEventListener('click', function(){
+    
+//    var numeroMor = prompt("Ingrese su numero mor <3");
+//    console.log(numeroMor);
+
+// })
+
+/** PROPIEDADES NUMERICAS */
+
+// console.log("MAX_VALUE: ", Number.MAX_VALUE);
+
+// console.log("MIN_VALUE: ", Number.MIN_VALUE);
+
+// console.log("NEGATIVE_INFINITY: ", Number.NEGATIVE_INFINITY);
+
+// console.log("POSITIVE_INFINITY: ", Number.POSITIVE_INFINITY);
+
+// console.log("NaN", Number.NaN);
+
+
+/** METODOS NUMERICOS */
+
+// var numero = "10.8";
+
+// console.log("Number: ", typeof numero, Number(numero));
+// console.log("parseInt: ", parseInt(numero*5) );
+// console.log("parseFloat: ", parseFloat(numero));
+// console.log("isNaN: ", isNaN(numero));
+// console.log("isInteger: ", Number.isInteger(numero) );
+
+
+/* PROPIEDADES NUMERICAS DE INSTANCIAS */
+
+// var numero = 10.8;
+
+// console.log("toExponencial: ", numero.toExponential() );
+// console.log("toFixed: ", numero.toFixed(1)); // default is zero
+// console.log("toPrecision: ", numero.toPrecision(3));
+// console.log("toString: ", numero.toString());
+
+
+/** METODOS DE BUSQUEDA | PARTE 1 */
+
+var mensaje = "Estoy aprendiendo JavaScript y estoy Aprendiendo mucho";
+
+// var resultado = mensaje.indexOf("y");
+// var resultado = mensaje.lastIndexOf("y");
+// var resultado = mensaje.search("estoy");
+
+// var resultado = mensaje.search(/o/i); // i = case sensity
+
+// var resultado = mensaje.match(/aprendiendo/gi); //g = todos los resltados misma frase, i= case sensity, minus y mayus
+// var resultado = mensaje.substr(0,5);
+
+ // Empieza en index 18 t va hasta el 28 xd
+// var resultado = mensaje.substring(18,28);
+// var resultado = mensaje.charAt(18); // Me trae la letra donde esta la posicion n 18 
+
+
+// var resultado = mensaje.startsWith("Estoy"); // sensible a mayusculas
+// var resultado = mensaje.endsWith("mucho");
+
+// var gmail = "aux@Gmail.COM";
+// gmail = gmail.toLowerCase();
+// console.log(gmail);
+// var resultado = gmail.includes("gmail.com");
+
+
+// var resultado = mensaje.replace("Aprendiendo", "Quiero dormir :(");
+
+// var resultado = mensaje.slice(7); 
+
+// var resultado = mensaje.split(" ");
+
+var test = "         Go go go    ";
+
+var resultado = test.trim();
+
+console.log(resultado);
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -436,3 +436,20 @@ var test = "         Go go go    ";
 var resultado = test.trim();
 
 console.log(resultado);
+
+
+///*** PLANTILLAS Y LITERALES */
+
+var lenguaje = "JavaScript";
+
+var lenguaje2 = "Python";
+
+var mensaje = `I love ${lenguaje} and ${lenguaje2}.`;
+
+console.log(mensaje);
+
+//** Arreglos */
+
+var platillos = Array.of("Carne", "Frijoles", "Arepa");
+
+console.log(platillos);

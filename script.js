@@ -210,7 +210,7 @@ receta(...pasos, "Fritar las papas", "Carne", " Chorizo", " Salchicha", " Queso"
 //     }
 // )()
 
-var saludaMor = function () {
+var saludaMor = function() {
     return "Hola mor :3";
 }
 
@@ -342,24 +342,22 @@ boton.addEventListener('mouseout', function(){
 
 
 // boton.addEventListener('click', function(){
-    
+
 //     // alert("eoooo");
 //     let resultado = confirm("Quieres ser mi novia?");
 //     if(resultado){
 //         alert(":)");
-       
+
 //     } else {
 //         alert("¡Jajajajaja te engañe! Vamos es a estudiar mor");
 //         window.location = ("https://platzi.com/home");
 //     }
-    
+
 
 // })
 
-
-
 // boton.addEventListener('click', function(){
-    
+
 //    var numeroMor = prompt("Ingrese su numero mor <3");
 //    console.log(numeroMor);
 
@@ -409,10 +407,11 @@ var mensaje = "Estoy aprendiendo JavaScript y estoy Aprendiendo mucho";
 
 // var resultado = mensaje.search(/o/i); // i = case sensity
 
+//ESTE ME VA SERVIR JIJI XD
 // var resultado = mensaje.match(/aprendiendo/gi); //g = todos los resltados misma frase, i= case sensity, minus y mayus
 // var resultado = mensaje.substr(0,5);
 
- // Empieza en index 18 t va hasta el 28 xd
+// Empieza en index 18 t va hasta el 28 xd
 // var resultado = mensaje.substring(18,28);
 // var resultado = mensaje.charAt(18); // Me trae la letra donde esta la posicion n 18 
 
@@ -437,46 +436,3 @@ var test = "         Go go go    ";
 var resultado = test.trim();
 
 console.log(resultado);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

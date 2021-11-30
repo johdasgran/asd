@@ -472,3 +472,5 @@ let menu = ["choripapa", "papas locas", "hamburgesa", "hot dog"];
 menu.forEach((food, i) => {
     console.log(i, food);
 });
+
+menu.forEach(food => console.log(food))

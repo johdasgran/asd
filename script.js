@@ -485,4 +485,9 @@ let people = [
     { nombre: "María", apellido: "Lexbug", pais: "Chile" }
 ]
 
+// retorna el objeto
 console.log(people.find(person => person.pais == "Colombia"));
+
+//retorna el indice del objeto - caseSensitive
+
+console.log(people.findIndex(person => person.pais == "Chile"));

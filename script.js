@@ -457,10 +457,18 @@ console.log(mensaje);
 
 //*** DESESTRUCTURAR ARREGLOS */
 
-var burger = ["pan", "carne", "queso", "salsa", "pollo", "jamon", "maiz"];
+// let burger = ["pan", "carne", "queso", "salsa", "pollo", "jamon", "maiz"];
 
-var [p1, p2, p3, p4, p5, p6, p7] = burger;
+// let [p1, p2, p3, p4, p5, p6, p7] = burger;
 
-console.log(p1, p2, p3, p4, p5, p6, p7);
-console.log(p1);
-console.log(burger);
+// console.log(p1, p2, p3, p4, p5, p6, p7);
+// console.log(p1);
+// console.log(burger);
+
+///***** ForEach */
+
+let menu = ["choripapa", "papas locas", "hamburgesa", "hot dog"];
+
+menu.forEach((food, i) => {
+    console.log(i, food);
+});

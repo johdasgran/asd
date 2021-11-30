@@ -467,10 +467,22 @@ console.log(mensaje);
 
 ///***** ForEach */
 
-let menu = ["choripapa", "papas locas", "hamburgesa", "hot dog"];
+let menu = ["choripapa", "papas locas", "hamburgesa", "hot dog", "choripapa"];
 
-menu.forEach((food, i) => {
-    console.log(i, food);
-});
+// menu.forEach((food, i) => {
+//     console.log(i, food);
+// });
 
-menu.forEach(food => console.log(food))
+// menu.forEach(food => console.log(food))
+
+let encontrado = menu.find(food => food == "choripapa");
+
+console.log(encontrado == "choripapa" ? "uhmmm rico" : "daa");
+
+let people = [
+    { nombre: "Danna", apellido: "Aguirre", pais: "Colombia" },
+    { nombre: "Valentina", apellido: "Diaz", pais: "Costa Rica" },
+    { nombre: "María", apellido: "Lexbug", pais: "Chile" }
+]
+
+console.log(people.find(person => person.pais == "Colombia"));

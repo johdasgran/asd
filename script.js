@@ -499,3 +499,7 @@ console.log(people.filter(person => person.pais == "Colombia"));
 // .some and .every--
 // some, busca si hay concidencias y devuelve true si las hay
 // every, buscasi todos complen la condicion y devuelve true or false
+
+
+//** DOM and BOM */
+// document DOm and window BOM

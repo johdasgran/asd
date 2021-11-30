@@ -482,12 +482,20 @@ console.log(encontrado == "choripapa" ? "uhmmm rico" : "daa");
 let people = [
     { nombre: "Danna", apellido: "Aguirre", pais: "Colombia" },
     { nombre: "Valentina", apellido: "Diaz", pais: "Costa Rica" },
-    { nombre: "María", apellido: "Lexbug", pais: "Chile" }
+    { nombre: "María", apellido: "Lexbug", pais: "Chile" },
+    { nombre: "Laura", apellido: "Hashs", pais: "Colombia" }
 ]
 
-// retorna el objeto
+// retorna el objeto, solo el primero q encuentra
 console.log(people.find(person => person.pais == "Colombia"));
 
 //retorna el indice del objeto - caseSensitive
 
 console.log(people.findIndex(person => person.pais == "Chile"));
+
+// retorna el objeto con las conicidencias
+console.log(people.filter(person => person.pais == "Colombia"));
+
+// .some and .every--
+// some, busca si hay concidencias y devuelve true si las hay
+// every, buscasi todos complen la condicion y devuelve true or false

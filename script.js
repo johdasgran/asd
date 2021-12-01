@@ -519,4 +519,15 @@ fetch('https://jsonplaceholder.typicode.com/posts')
     .then(data => {
         let post = data;
         console.log(post[0].title);
+
+        showData(data);
+
+
     });
+
+function showData(posts) {
+    posts.map((post, i) => {
+        let title = document.write(posts[i].title);
+
+    });
+}

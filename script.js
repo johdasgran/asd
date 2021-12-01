@@ -504,7 +504,19 @@ console.log(people.filter(person => person.pais == "Colombia"));
 //** DOM and BOM */
 // document DOm and window BOM
 
+//***/ local Storage */
+
 localStorage.setItem('content', 'Hello babys xd');
 let hello = localStorage.getItem('content');
 
 console.log(hello);
+
+
+// API FECTH
+
+fetch('https://jsonplaceholder.typicode.com/posts')
+    .then(data => data.json())
+    .then(data => {
+        let post = data;
+        console.log(post[0].title);
+    });

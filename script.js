@@ -503,3 +503,8 @@ console.log(people.filter(person => person.pais == "Colombia"));
 
 //** DOM and BOM */
 // document DOm and window BOM
+
+localStorage.setItem('content', 'Hello babys xd');
+let hello = localStorage.getItem('content');
+
+console.log(hello);

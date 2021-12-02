@@ -533,7 +533,7 @@ console.log(hello);
 // }
 
 /// https://restcountries.com/v2/all
-
+// https://restcountries.com/#api-endpoints-v2-all
 // Consume los datos y muestra las banderas de los paises, promesas
 
 let contBanderas = document.getElementById('banderas');
@@ -545,8 +545,6 @@ fetch('https://restcountries.com/v2/all')
         showFlag(countries);
 
     });
-
-
 
 
 function showFlag(countries) {

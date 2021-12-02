@@ -514,20 +514,49 @@ console.log(hello);
 
 // API FECTH
 
-fetch('https://jsonplaceholder.typicode.com/posts')
+// fetch('https://jsonplaceholder.typicode.com/posts')
+//     .then(data => data.json())
+//     .then(data => {
+//         let post = data;
+//         console.log(post[0].title);
+
+//         showData(data);
+
+
+//     });
+
+// function showData(posts) {
+//     posts.map((post, i) => {
+//         let title = document.write(posts[i].title);
+
+//     });
+// }
+
+/// https://restcountries.com/v2/all
+
+
+
+let contBanderas = document.getElementById('banderas');
+
+fetch('https://restcountries.com/v2/all')
     .then(data => data.json())
-    .then(data => {
-        let post = data;
-        console.log(post[0].title);
+    .then(countries => {
 
-        showData(data);
-
+        showFlag(countries);
 
     });
 
-function showData(posts) {
-    posts.map((post, i) => {
-        let title = document.write(posts[i].title);
 
-    });
+
+
+function showFlag(countries) {
+    contBanderas.innerHTML = '';
+    countries.map((country, i) => {
+        let bandera = document.createElement('img');
+        bandera.src = country.flag;
+        bandera.width = '50';
+        bandera.height = '50';
+        contBanderas.appendChild(bandera);
+    })
+
 }

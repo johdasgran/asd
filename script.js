@@ -534,7 +534,7 @@ console.log(hello);
 
 /// https://restcountries.com/v2/all
 
-
+// Consume los datos y muestra las banderas de los paises, promesas
 
 let contBanderas = document.getElementById('banderas');
 
